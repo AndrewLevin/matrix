@@ -50,7 +50,7 @@ LHAPDF_NNLO     =  NNPDF30_nlo_as_0118 #  NNLO LHAPDF set
 PDFsubset_NNLO  =  0           #  member of NNLO PDF set
 precision_NNLO  =  1.e-2       #  precision of NNLO cross section
 
-switch_qT_accuracy = 0         #  switch to improve qT-subtraction accuracy (slower numerical convergence) 
+switch_qT_accuracy = 1         #  switch to improve qT-subtraction accuracy (slower numerical convergence) 
 
 
 #----------------------------\
@@ -78,15 +78,15 @@ n_observed_min jet = 0         #  minimal number of observed jets (with cuts abo
 n_observed_max jet = 99        #  maximal number of observed jets (with cuts above)
 
 # Lepton cuts
-define_pT lep = 15.            #  requirement on lepton transverse momentum (lower cut)
-define_eta lep = 1.e99         #  requirement on lepton pseudo-rapidity (upper cut)
+define_pT lep = 25.            #  requirement on lepton transverse momentum (lower cut)
+define_eta lep = 2.5         #  requirement on lepton pseudo-rapidity (upper cut)
 define_y lep = 1.e99           #  requirement on lepton rapidity (upper cut)
 n_observed_min lep = 1         #  minimal number of observed leptons (with cuts above)
 n_observed_max lep = 99        #  maximal number of observed leptons (with cuts above)
 
 # Photon cuts
-define_pT photon = 15.         #  requirement on photon transverse momentum (lower cut)
-define_eta photon = 2.6       #  requirement on photon pseudo-rapidity (upper cut)
+define_pT photon = 25.         #  requirement on photon transverse momentum (lower cut)
+define_eta photon = 2.5       #  requirement on photon pseudo-rapidity (upper cut)
 define_y photon = 1.e99        #  requirement on photon rapidity (upper cut)
 n_observed_min photon = 1      #  minimal number of observed photons (with cuts above)
 n_observed_max photon = 99     #  maximal number of observed photons (with cuts above)
